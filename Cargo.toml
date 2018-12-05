@@ -1,0 +1,22 @@
+[package]
+name = "example-actix-web-juniper-diesel"
+version = "0.1.0"
+authors = ["Brendan Ball"]
+
+[dependencies]
+env_logger = "0.5"
+
+actix = "0.7"
+actix-web = "0.7"
+
+futures = "0.1"
+uuid = { version = "0.5", features = ["serde", "v4"] }
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+diesel = { version = "^1.1.0", features = ["sqlite", "r2d2"] }
+r2d2 = "0.8"
+dotenv = "0.10"
+
+juniper = "0.10"
